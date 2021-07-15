@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../css/photon.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <br> <br>
+    
+    <div class='window-content'>
+        <div class="input-div">
+            <input type="file"
+                accept=".wav"  id="audioselect">
+                <br><br>
+            <input type="text" id="name" placeholder="Name">
+        </div>
+        
+    </div>
+<br><br>
+    <div class="action-buttons">
+        <button class="btn btn-default btn-large" onclick="addAudio()">
+            <span class="icon icon-plus icon-text"></span>Add
+        </button>
+
+        <!-- <button class="btn btn-default btn-large" onclick="submit()">
+            <span class="icon icon-mic icon-text"></span>Train Audio
+        </button> -->
+    </div>
+
+    <br>
+
+    <div class="padding-more">
+        
+        <h4 style="margin-left: 5px; color: rgb(11, 56, 56); max-width: 300px;"></h4>
+        <img style="margin-left: auto; margin-right: auto; display: block; margin-bottom: 10px;">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px; word-wrap: break-word">
+                            Name
+                        </th>
+                        <th style="width: 150px; word-wrap: break-word;">
+                            Audio
+                        </th>
+                    </tr>
+                </thead>
+    
+                <tbody id="table-body">
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+<br><br><br>
+
+    
+
+    <footer class="toolbar toolbar-footer" id="footer">
+        <div class="toolbar-actions" style="-webkit-app-region: no-drag !important">
+    
+            <!-- <a href="index.html"> -->
+                <!-- <button class="btn btn-default pull-right btn-large" style="margin-top: 3px;">
+                    <span class="icon icon-doc-text-inv"></span>
+                    Train Audio
+                </button> -->
+                <button class="btn btn-default btn-large pull-right" onclick="submit_train_audio()">
+                    <span class="icon icon-mic icon-text"></span>Train Audio
+                </button>
+            <!-- </a> -->
+            <a href="./trans.html">
+                <button class="btn btn-primary btn-default pull-left btn-large" style="margin-top: 3px;">
+                    Generate Transcript
+                </button>
+            </a>
+
+            <a href="./home.html">
+            <button class="btn btn-default pull-left btn-large" id="home-btn">
+                <span class="icon icon-home"></span>
+            </button>
+            </a>
+    
+        </div>
+    </footer>
+</body>
+
+</html>

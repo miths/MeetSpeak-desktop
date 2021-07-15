@@ -1,0 +1,7 @@
+.vscode
+node_modules
+waveAudio.wav
+srcTemp.txt
+transcript
+src/audio_files
+src/audio_chunks_transcription

@@ -1,0 +1,17 @@
+{
+  "name": "fyp_desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "mithil ghinaiya",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "electron": "^10.1.5",
+    "jquery": "^3.6.0"
+  }
+}

@@ -1,0 +1,26 @@
+#trained-speakers ul {
+  list-style: none;
+  margin-left: 0;
+  padding-inline-start: 0;
+}
+#trained-speakers li {
+  display: inline;
+  font-size: large;
+}
+
+/* .trained-speaker-name {
+  display: block;
+  margin: auto;
+} */
+
+h1,
+h3,
+body {
+  text-align: center;
+}
+
+#footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}

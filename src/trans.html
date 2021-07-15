@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/photon.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>MeetSpeak</title>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <br><br>
+    <div class="create-transcript-div">
+        <input type="file" accept=".wav" id="main-audio-input">
+        Name of text file: <input type="text" id="transcript-name" value="transcript">
+        <button class="btn btn-default btn-large" onclick="create_transcript()" id="create-transcript">
+            <span class="icon icon-doc-text-inv"></span>Create Transcript
+        </button>
+    </div>
+    <br><br>
+    <div class="notepad">
+        <br>
+        <p id="notepad-para" ></p>
+    </div>
+
+    <footer class="toolbar toolbar-footer" id="footer">
+        <div class="toolbar-actions" style="-webkit-app-region: no-drag !important">
+
+            <a href="./home.html">
+            <button class="btn btn-default pull-left btn-large" id="home-btn">
+                <span class="icon icon-home"></span>
+            </button>
+            </a>
+    
+        </div>
+    </footer>
+
+</body>
+</html>
